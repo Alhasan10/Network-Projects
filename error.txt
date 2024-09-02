@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error 404</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 4em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        em {
+            font-size: 4em;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        font[color="red"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <font color="red">
+        <h1>The file is not found</h1>
+    </font>
+    <p><strong>Alhasan Manasra 1211705</strong></p>
+    <p><strong>Ghassan Qandeel 1212397</strong></p>
+    <p><strong>Aws Shaheen 1212585</strong></p>
+    <p><em>HTTP/1.1 404 Not Found</em></p>
+</body>
+
+</html>

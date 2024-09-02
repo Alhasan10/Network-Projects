@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <link  rel="icon" href="BZU1.png">
+
+        <title>ENCS3320-My Tiny Webserver 23/24</title>
+        <style>
+
+            .student-info {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                /* gap: 16px; */
+                flex-direction: column;
+
+            }
+
+            .title {
+                background: burlywood;
+                width: 1500px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 32px;
+                font-family: verdana;
+                font-size: 20px;
+            }
+
+            h2{
+                    font-style: oblique;
+                    font-weight: bolder;
+                    margin-top: 5px; /* Adjust the margin as needed */
+                    padding: 0;
+                    margin-bottom: 0; /* Adjust the margin as needed */
+
+                }
+
+             /* Define styles for the boxes */
+             .box {
+                display: flex;
+                /* justify-content: flex-start;
+                align-items: flex-start; */
+            border: 1px solid #fffcfc;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            gap: 16px;
+            border-radius: 16px;
+            z-index: 1;
+                    }
+            .box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('bzu1.jpg'); /* Use the same background image as the body */
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter:blur(200px);
+           z-index: -1;
+        }
+             .imgg
+             {
+                 width: 150px;
+                border-radius: 16px;
+
+             }
+
+             .horizontal-container {
+            display: flex;
+            flex-direction: row;
+            }
+
+             body {
+            background-image: url('bzu1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 0; /* Adjust the margin as needed */
+    margin-bottom: 5px; /* Adjust the margin as needed */
+    color:#000000;
+    font-style:inherit;
+    font-weight:90;
+}
+
+</style>
+     </head>
+    <body>
+    <h1  class="title"><img style="padding-right: 16px;" width="32" height="32" src="BZU1.png">Welcome to our course <strong style="color: blue;padding-left: 4px"> Computer Networks, This is a tiny webserver </strong></h1>
+
+    <div class="box">
+        <img class="imgg" src="images/Ghassan.jpg">
+        <div class="student-info">
+        <h2> ghassan 1212397</h2>
+        <p>hello</p>
+    </div>
+</div>
+    <div class="box">
+        <img class="imgg" src="images/Alhasan.jpg">
+        <div class="student-info">
+        <h2>7anash 1211705</h2>
+        <p>7anoosh</p>
+    </div>
+</div>
+    <div class="box" >
+        <img class="imgg" src="images/Aws.jpg">
+        <div class="student-info">
+        <h2>Aws Shaheen 1212585</h2>
+        <p>Aws</p>
+    </div>
+</div>
+    <div class="box">
+        <div class="student-info">
+    </div>
+</div>
+
+
+<a href="https://www.w3schools.com/python/python_strings.asp" target="_blank">W3School</a>
+    </body>
+</html>

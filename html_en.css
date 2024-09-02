@@ -1,0 +1,95 @@
+            /* define to be our texts nice */
+            .student-info {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                /* gap: 16px; */
+                flex-direction: column;
+
+            }
+            /*defining for tittle with background  */
+            .title {
+                background: burlywood;
+                width: 1500px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 32px;
+                font-family: verdana;
+                font-size: 20px;
+            }
+            /* define to be our texts nice */
+            h2{
+                    font-style: oblique;
+                    font-weight: bolder;
+                    margin-top: 5px; /* Adjust the margin as needed */
+                    padding: 0;
+                    margin-bottom: 0; /* Adjust the margin as needed */
+
+                }
+
+             /* Define styles for the boxes */
+             .box {
+                 display: flex;
+
+            border: 1px solid #fffcfc;
+            padding: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            gap: 16px;
+            border-radius: 16px;
+            z-index: 1;
+                    }
+            /* defining to be the text clear  */
+            .box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('bb.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter:blur(200px);
+           z-index: -1;
+        }
+
+            /*defining for images sizes */
+             .imgg
+             {
+                 width: 150px;
+                border-radius: 16px;
+
+             }
+            /*defining for be elemants horizontal */
+             .horizontal-container {
+            display: flex;
+            flex-direction: row;
+            }
+
+             /*defining for background of body */
+             body {
+
+            background-image: url("bb.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+             /* define to be our texts nice */
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* define to be our texts nice */
+        p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 0; /* Adjust the margin as needed */
+    margin-bottom: 5px; /* Adjust the margin as needed */
+    color:#fffcfc;
+    font-style:inherit;
+    font-weight:90;
+}

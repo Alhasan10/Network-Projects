@@ -1,0 +1,47 @@
+# --------------------------- server ----------------------------
+from socket import *
+import time
+
+serverPort = 9955
+serverSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket.bind(('', serverPort))
+serverSocket.listen(1)
+print  ('The server is ready receive')
+#print(serverSocket)
+while True:
+    connectionSocket, addr = serverSocket.accept()
+
+    sentence1 = connectionSocket.recv(2048).decode()
+
+
+    if ((sentence1 == '1212397' ) or  (sentence1 == '1212585'  )  or (sentence1 == '1211705'  )):
+        connectionSocket.send("The server will lock screen after 10 seconds ".encode())
+        time.sleep((10))
+        break
+
+    else:
+        connectionSocket.send("Please try again, ID is not true!".encode())
+        break
+
+connectionSocket.close()
+##################################################################
+# ------------------------------- client -------------------------
+from socket import *
+serverName = 'localhost'
+serverPort = 9955
+#define name and the port
+
+#client >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+clientSocket = socket(AF_INET, SOCK_STREAM)
+clientSocket.connect((serverName, serverPort))
+#connect on the port and the hostname
+
+student_id =input('Enter your ID :\n')# id from input
+
+clientSocket.send(student_id.encode())# id
+
+msg = clientSocket.recv(1024).decode()#
+print(msg)
+
+clientSocket.close()
